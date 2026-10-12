@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-GB">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DrawSmith Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+/* Layout: one reading column, a short masthead with the app mark, a summary panel, then the policy sections. Support page for the App Store Support URL. */
+:root {
+  --paper: #FBFAF7;
+  --card: #FFFFFF;
+  --edge: #E4E0D6;
+  --ink: #1F2430;
+  --dim: #5F6472;
+  --brand: #1E4F8A;
+  --gold: #B8860B;
+  --summary: #EEF3FA;
+  --display: "Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --body: "Atkinson Hyperlegible", -apple-system, "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #12161D; --card: #1B212B; --edge: #2A323E; --ink: #ECEEF2; --dim: #9AA2AF;
+    --brand: #8DB7EA; --gold: #F0BE2A; --summary: #172334; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #12161D; --card: #1B212B; --edge: #2A323E; --ink: #ECEEF2; --dim: #9AA2AF;
+  --brand: #8DB7EA; --gold: #F0BE2A; --summary: #172334; color-scheme: dark;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font: 1.0625rem/1.65 var(--body);
+  padding-inline: 16px;
+  padding-block: 40px 64px;
+}
+.page { max-width: 40rem; margin: 0 auto; display: flex; flex-direction: column; gap: 2.25rem; }
+header { display: flex; align-items: center; gap: 1rem; }
+header svg { width: 56px; height: 56px; flex: none; border-radius: 13px; }
+.eyebrow { font: 700 0.75rem/1.2 var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--dim); }
+h1 { font: 800 clamp(1.9rem, 6vw, 2.6rem)/1.05 var(--display); margin: 0.2rem 0 0; text-wrap: balance; }
+.meta { color: var(--dim); font-size: 0.95rem; margin: 0; }
+.summary { background: var(--summary); border-radius: 14px; padding: 1.25rem 1.4rem; display: flex; flex-direction: column; gap: 0.75rem; }
+.summary p { margin: 0; }
+section { display: flex; flex-direction: column; gap: 0.7rem; min-width: 0; }
+h2 { font: 700 1.3rem/1.25 var(--display); margin: 0; padding-top: 1.1rem; border-top: 1px solid var(--edge); text-wrap: balance; }
+section p { margin: 0; }
+ul { margin: 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.35rem; }
+a { color: var(--brand); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 2px; }
+.path { font-weight: 700; }
+footer { color: var(--dim); font-size: 0.9rem; border-top: 1px solid var(--edge); padding-top: 1.1rem; }
+</style>
+
+<div class="page">
+  <header>
+    <svg viewBox="0 0 1024 1024" role="img" aria-label="DrawSmith app icon">
+      <rect width="1024" height="1024" fill="#1E4F8A"/>
+      <circle cx="512" cy="548" r="322" fill="none" stroke="#F4F8FF" stroke-width="34"/>
+      <path d="M330 330 Q250 300 247 644 M247 644 Q480 140 768 667 M768 667 Q720 660 610 801" fill="none" stroke="#F4F8FF" stroke-width="26" stroke-linecap="round" stroke-dasharray="2 44"/>
+      <circle cx="610" cy="801" r="66" fill="#F4F8FF"/>
+    </svg>
+    <div>
+      <div class="eyebrow">DrawSmith for iPhone and iPad</div>
+      <h1>Support</h1>
+    </div>
+  </header>
+
+  <div class="summary">
+    <p><strong>Contact.</strong> Email <a href="mailto:kev.moore@gmail.com?subject=DrawSmith%20support">kev.moore@gmail.com</a>. Tell us your device, the iOS version and what happened. We usually reply within a few days.</p>
+  </div>
+
+  <section>
+    <h2>What DrawSmith is</h2>
+    <p>DrawSmith simulates lottery draw machines with real physics, keeps your lines, checks them against official results and shows statistics. It does not sell tickets, and it cannot change your chances: every draw is random, and every line has the same odds.</p>
+  </section>
+
+  <section>
+    <h2>DrawSmith Pro</h2>
+    <ul>
+      <li><strong>Restore a purchase:</strong> open <span class="path">About and help › Restore Purchases</span>. Use the same Apple Account that you used to buy it.</li>
+      <li><strong>Refunds:</strong> Apple handles all payments and refunds, at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</li>
+      <li>Pro removes all ads, unlocks the Pro machine (camera modes, slow-motion replay, AR) and the full analysis.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Common questions</h2>
+    <ul>
+      <li><strong>Results are missing or late:</strong> results show after the operator publishes them, usually on the evening of the draw. Pull down on the Results tab to check again.</li>
+      <li><strong>My lines are not on my other device:</strong> turn on iCloud for DrawSmith on both devices, in <span class="path">Settings › your name › iCloud</span>.</li>
+      <li><strong>Ad privacy choices:</strong> open <span class="path">About and help › Ad privacy choices</span>.</li>
+      <li><strong>AR view shows no machine:</strong> point the camera at a flat, well-lit table or floor, and move the device slowly.</li>
+      <li><strong>Delete your data:</strong> delete the app. To delete synced lines too, turn off iCloud for DrawSmith first. See the <a href="privacy.html">privacy policy</a>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Play responsibly</h2>
+    <p>DrawSmith is for adults aged 18 or over. If gambling is a problem for you or someone you know, free help is available:</p>
+    <ul>
+      <li>National Gambling Helpline (UK, free, 24/7): <a href="tel:08088020133">0808 8020 133</a></li>
+      <li>GamCare: <a href="https://www.gamcare.org.uk">gamcare.org.uk</a></li>
+      <li>GambleAware: <a href="https://www.gambleaware.org">gambleaware.org</a></li>
+    </ul>
+  </section>
+
+  <footer>DrawSmith is an independent app. It is not affiliated with Allwyn, The National Lottery or any lottery operator. <a href="privacy.html">Privacy policy</a></footer>
+</div>

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en-GB">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DrawSmith Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+/* Layout: one reading column, a short masthead with the app mark, a summary panel, then the policy sections. Public copy of App/Sources/Shared/PrivacyPolicyView.swift. */
+:root {
+  --paper: #FBFAF7;
+  --card: #FFFFFF;
+  --edge: #E4E0D6;
+  --ink: #1F2430;
+  --dim: #5F6472;
+  --brand: #1E4F8A;
+  --gold: #B8860B;
+  --summary: #EEF3FA;
+  --display: "Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --body: "Atkinson Hyperlegible", -apple-system, "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #12161D; --card: #1B212B; --edge: #2A323E; --ink: #ECEEF2; --dim: #9AA2AF;
+    --brand: #8DB7EA; --gold: #F0BE2A; --summary: #172334; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #12161D; --card: #1B212B; --edge: #2A323E; --ink: #ECEEF2; --dim: #9AA2AF;
+  --brand: #8DB7EA; --gold: #F0BE2A; --summary: #172334; color-scheme: dark;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font: 1.0625rem/1.65 var(--body);
+  padding-inline: 16px;
+  padding-block: 40px 64px;
+}
+.page { max-width: 40rem; margin: 0 auto; display: flex; flex-direction: column; gap: 2.25rem; }
+header { display: flex; align-items: center; gap: 1rem; }
+header svg { width: 56px; height: 56px; flex: none; border-radius: 13px; }
+.eyebrow { font: 700 0.75rem/1.2 var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--dim); }
+h1 { font: 800 clamp(1.9rem, 6vw, 2.6rem)/1.05 var(--display); margin: 0.2rem 0 0; text-wrap: balance; }
+.meta { color: var(--dim); font-size: 0.95rem; margin: 0; }
+.summary { background: var(--summary); border-radius: 14px; padding: 1.25rem 1.4rem; display: flex; flex-direction: column; gap: 0.75rem; }
+.summary p { margin: 0; }
+section { display: flex; flex-direction: column; gap: 0.7rem; min-width: 0; }
+h2 { font: 700 1.3rem/1.25 var(--display); margin: 0; padding-top: 1.1rem; border-top: 1px solid var(--edge); text-wrap: balance; }
+section p { margin: 0; }
+ul { margin: 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.35rem; }
+a { color: var(--brand); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 2px; }
+.path { font-weight: 700; }
+footer { color: var(--dim); font-size: 0.9rem; border-top: 1px solid var(--edge); padding-top: 1.1rem; }
+</style>
+
+<div class="page">
+  <header>
+    <svg viewBox="0 0 1024 1024" role="img" aria-label="DrawSmith app icon">
+      <rect width="1024" height="1024" fill="#1E4F8A"/>
+      <circle cx="512" cy="548" r="322" fill="none" stroke="#F4F8FF" stroke-width="34"/>
+      <path d="M330 330 Q250 300 247 644 M247 644 Q480 140 768 667 M768 667 Q720 660 610 801" fill="none" stroke="#F4F8FF" stroke-width="26" stroke-linecap="round" stroke-dasharray="2 44"/>
+      <circle cx="610" cy="801" r="66" fill="#F4F8FF"/>
+    </svg>
+    <div>
+      <div class="eyebrow">DrawSmith for iPhone and iPad</div>
+      <h1>Privacy Policy</h1>
+    </div>
+  </header>
+
+  <p class="meta">Effective 12 October 2026. DrawSmith is made by Kev Moore, an independent developer in the UK.</p>
+
+  <div class="summary">
+    <p><strong>Summary.</strong> DrawSmith has no accounts and no sign-in. The developer does not collect, store or sell your personal data. Your lines and settings stay on your devices.</p>
+    <p>The free version shows ads from Google AdMob. Google collects some data to show and measure those ads, as described below. If you buy DrawSmith Pro, the app shows no ads and does not start Google's ad software.</p>
+  </div>
+
+  <section>
+    <h2>Data on your device</h2>
+    <p>Your saved lines, settings, the draw history and the results of past checks are stored only on your device.</p>
+    <p>If iCloud is on for DrawSmith, your saved lines sync between your devices through Apple's iCloud key-value storage, in your own iCloud account. The developer cannot see this data.</p>
+    <p>Draw-day reminders are local notifications, scheduled on your device. No server sends them.</p>
+    <p>AR view (Pro) uses the camera to find a surface for the machine. Apple's ARKit processes the camera image on your device. The app does not record, store or send it.</p>
+  </section>
+
+  <section>
+    <h2>Draw results</h2>
+    <p>The app downloads public draw results from the National Lottery results feed and, for Powerball, from New York State's open data service (data.ny.gov). These requests contain no personal data. As with any internet request, those servers see your IP address.</p>
+  </section>
+
+  <section>
+    <h2>Ads in the free version</h2>
+    <p>The free version uses Google AdMob, and Google's User Messaging Platform for consent. Google may collect:</p>
+    <ul>
+      <li>your IP address and coarse location</li>
+      <li>device and app information</li>
+      <li>ad interactions, such as views and taps</li>
+      <li>diagnostic data</li>
+    </ul>
+    <p>Google uses this data to show ads, to measure them and to prevent fraud.</p>
+    <p>Google uses your device's advertising identifier (IDFA) only if you allow tracking when iOS asks. You can change this at any time in <span class="path">Settings › Privacy &amp; Security › Tracking</span>.</p>
+    <p>In the UK and the EU, Google's consent form asks you before personalised ads show. To change your choice, open DrawSmith and go to <span class="path">About and help › Ad privacy choices</span>.</p>
+    <p>The app asks Google for ads suitable for teens and up, and blocks gambling ads. It never shows ads during a draw on the Machine tab.</p>
+    <p>How Google uses data from apps that use its services: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></p>
+  </section>
+
+  <section>
+    <h2>Purchases</h2>
+    <p>Apple processes the DrawSmith Pro purchase. The developer receives no payment details and no Apple Account details. The app reads only whether you own DrawSmith Pro, from Apple's StoreKit.</p>
+  </section>
+
+  <section>
+    <h2>Age</h2>
+    <p>DrawSmith is for adults aged 18 or over. It is not directed at children, and the developer does not knowingly collect data from anyone under 18.</p>
+  </section>
+
+  <section>
+    <h2>Your rights</h2>
+    <p>Under UK GDPR and EU GDPR you have rights to access, correct and delete your personal data. The developer holds no personal data about you. To delete the data on your device, delete the app. To delete synced lines, also turn off iCloud for DrawSmith.</p>
+    <p>For data that Google holds about ads, use Google's tools at <a href="https://myaccount.google.com">myaccount.google.com</a>, or contact Google.</p>
+    <p>You can complain to the Information Commissioner's Office (<a href="https://ico.org.uk">ico.org.uk</a>) in the UK, or to your local data protection authority.</p>
+  </section>
+
+  <section>
+    <h2>Changes and contact</h2>
+    <p>If this policy changes, the new version will show in the app and at this web address, with a new date. Support: <a href="support.html">kevmoore.github.io/drawsmith/support.html</a></p>
+    <p>Questions: <a href="mailto:kev.moore@gmail.com">kev.moore@gmail.com</a></p>
+  </section>
+
+  <footer>DrawSmith is an independent app. It is not affiliated with Allwyn, The National Lottery or any lottery operator.</footer>
+</div>
