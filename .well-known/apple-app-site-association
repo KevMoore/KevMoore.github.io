@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["T6R6644E7Y.uk.co.kevinmoore.LottoSim"],
+        "components": [
+          { "/": "/drawsmith/l/*", "comment": "Shared DrawSmith lines" }
+        ]
+      }
+    ]
+  }
+}
